@@ -1,0 +1,119 @@
+
+/* 1) Base style */
+
+* {
+	box-sizing: border-box;
+}
+
+/*set font-family for the body*/
+
+body {
+	font-family: Arial;
+	
+}
+
+
+/* set center the heading */
+h1 {
+	text-align: center;
+	
+}
+
+/* set margin left and right for container*/
+
+.container {
+	margin-left: 10px;
+	margin-right:10px;
+}
+
+/*set border, background-color and other features for each section*/
+
+.container .row > section{
+
+	border: 1px solid black;
+	width: 98%;
+	height: 200px;
+	background-color: gray;
+	margin-right: 2%;
+	margin-bottom: 2%;
+	position: relative;
+
+}
+
+
+/*set border and other features for section title */
+.container .row section.title {
+	border: 1px solid black;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 35%;
+	height:15%;
+	text-align: center;
+	font-weight: bold;
+	
+}
+
+/*set unique color for each section title*/
+.container .row section.sec-title1 {
+	background-color: #FFC0CB;
+	color:black;
+
+}
+.container .row section.sec-title2 {
+	background-color: maroon;
+	color: white;
+}
+.container .row section.sec-title3 {
+	background-color: #EEE8AA;
+	color: black;
+}
+
+.container .row section p {
+	padding: 25px 10px 0px 10px;
+	
+}
+
+
+/* 2) Media queries */
+
+/*for desktop view */
+
+@media (min-width:992px){
+
+	.container .row > section {
+		width: 30%;
+		float: left;
+	}
+}
+
+/* for tablet view */
+
+@media (min-width: 768px) and (max-width:991px){
+
+	.container .row > section {
+		width: 48%;
+		float: left;
+	}
+
+	.container .row section#section3 {
+		width: 98%;
+	}
+
+	.container .row section#section3 .title {
+		width: 15%;
+	}
+
+}
+
+/* for mobile view*/
+
+@media (max-width: 767px){
+
+	.container .row > section {
+		width: 98%;
+	}
+
+}
+
+
